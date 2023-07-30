@@ -107,7 +107,8 @@ def search_japanese_track_by_danceability_range(data):
     return tracks
 
 
-@app.route('/', methods=['GET', 'POST'])
+#@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['POST'])
 def index():
     if request.method == 'POST':
         image_file = request.files['image']
